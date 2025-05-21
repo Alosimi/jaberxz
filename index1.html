@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html style="background-color: rgb(20, 20, 20);">
+    <head>
+        <title>SImple Page</title>
+        <style>
+            #x{
+                position: absolute;
+                top: 282px;
+                justify-self: anchor-center;
+            }
+        </style>
+    </head>
+    <body>
+        <form id="x">
+            <img style="width: 300px;" src="os.gif">
+            <h3 style="font-style: inherit; color: brown;">Nothing is here Right now Maybe Later</h3>
+            <h4 style="font-style: inherit; color: rgb(121, 73, 73);">What Waiting for ? get out from this page!</h4>
+            <h4 style="font-style: inherit; color: rgb(175, 158, 158);">You can find me : <a style="color: blanchedalmond;"  target="_blank" href="https://discord.gg/k2">Here</a></h4>
+            <audio autoplay>
+                <source src="music.mp3" type="audio/mpeg">
+              </audio>              
+            <audio id="myAudio" src="music.mp3" autoplay muted></audio>
+                <script>
+                document.addEventListener('click', () => {
+                    const audio = document.getElementById('myAudio');
+                    audio.muted = false;  // رفع الصوت
+                    audio.play();
+                }, { once: true });
+                </script>
+        </form>
+    </body>
+</html>
